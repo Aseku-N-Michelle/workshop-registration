@@ -1,0 +1,35 @@
+*{box-sizing:border-box}body{margin:0;font-family:system-ui;background:linear-gradient(135deg,#eef7ff,#f7f0ff);color:#16213e}main{max-width:900px;margin:auto;padding:3rem 1rem}h1{color:#173f7a}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}.card,form{background:white;padding:1.2rem;border-radius:18px;box-shadow:0 12px 30px #1d35571c}label{display:block;margin:.8rem 0;text-transform:capitalize}input{width:100%;padding:.75rem;border:1px solid #aac;border-radius:10px}button{background:#0066cc;color:white;border:0;border-radius:10px;padding:.75rem 1rem}
+.reg-page { max-width: 960px; margin: 0 auto; padding: 32px 16px 56px; }
+.reg-page h1 { color: #17407a; margin: 0 0 4px; }
+.reg-intro { color: #475569; margin: 0 0 24px; }
+.reg-layout { display: grid; gap: 24px; grid-template-columns: 1fr; }
+@media (min-width: 800px) {
+  .reg-layout { grid-template-columns: 1.2fr 1fr; align-items: start; }
+}
+.reg-card { background: #fff; border-radius: 16px; padding: 24px; box-shadow: 0 8px 24px rgba(30, 41, 59, 0.08); }
+.reg-card h2 { margin: 0 0 16px; font-size: 1.2rem; color: #0f172a; }
+.reg-field { margin-bottom: 16px; display: flex; flex-direction: column; gap: 6px; }
+.reg-field label { font-weight: 600; font-size: 0.9rem; color: #1e293b; }
+.reg-field input, .reg-field select {
+  width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1;
+  border-radius: 10px; font-size: 1rem; font-family: inherit; background: #fff;
+}
+.reg-field input:focus, .reg-field select:focus { outline: 3px solid #bfdbfe; border-color: #3b82f6; }
+.reg-field input[aria-invalid="true"], .reg-field select[aria-invalid="true"] { border-color: #dc2626; background: #fef2f2; }
+.reg-error { color: #b91c1c; font-size: 0.85rem; margin: 0; }
+.reg-btn { width: 100%; padding: 12px; border: 0; border-radius: 10px; background: #2563eb; color: #fff; font-size: 1rem; font-weight: 600; cursor: pointer; }
+.reg-btn:hover { background: #1d4ed8; }
+.reg-success { background: #dcfce7; color: #166534; padding: 12px 14px; border-radius: 10px; margin: 0 0 16px; font-weight: 500; }
+.reg-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.reg-item { border: 1px solid #e2e8f0; border-left: 4px solid #22c55e; border-radius: 12px; padding: 12px 14px; display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.reg-item p { margin: 2px 0; font-size: 0.9rem; color: #475569; word-break: break-word; }
+.reg-remove { background: #fee2e2; color: #991b1b; border: 0; border-radius: 8px; padding: 6px 12px; cursor: pointer; font-weight: 600; }
+.reg-empty { color: #64748b; text-align: center; padding: 16px; margin: 0; }
+.reg-card form {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+  margin: 0;
+  max-width: none;
+}
